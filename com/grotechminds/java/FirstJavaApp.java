@@ -4,12 +4,36 @@ public class FirstJavaApp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-        System.out.print("Hello World");
+		String institution = "GroTech Minds"; 
         
-        //
-        // Enable collaborataion 
-        // First Step : Adding the file : git add <name of the file> , git add .
-        // Second step: Committing git commit -m "This is a dummy commmit"
-        // git push
+		Students harshit = new Students(25, "Harshit", "Jaipur", institution);
+        harshit.introduce();
+        
+        Students sabana = new Students(25, "Sabana" ,"Kolkata", institution);
+        sabana.introduce();       
+	}
+}
+
+class Students {
+	int age;
+	String name;
+	String address;
+	String institution;
+	
+	Students(int age, String nameFromC, String addressFromC, String institutionFromC){
+		this.age = age;
+		this.name = nameFromC;
+		this.address = addressFromC;	
+		this.institution = institutionFromC;
+		this.introduce();
+	}
+
+	public boolean introduce() {
+		int b = 0;
+		System.out.println("Hi !! My name is "+name+ 
+				" Age is: "+age+ "Address is: "+address+ 
+				" Institute: "+institution);
+		System.out.print(b);
+		return true;
 	}
 }
