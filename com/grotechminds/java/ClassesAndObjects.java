@@ -1,16 +1,20 @@
 package com.grotechminds.java;
 
-public class FirstJavaApp {
+public class ClassesAndObjects {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String institution = "GroTech Minds"; 
-        
-		Students harshit = new Students(25, "Harshit", "Jaipur", institution);
+		Students harshit = new Students(25, "Harshit", "Jaipur");
         harshit.introduce();
         
-        Students sabana = new Students(25, "Sabana" ,"Kolkata", institution);
-        sabana.introduce();       
+        Students.institution="GroTech Minds"; 
+        
+        Students sabana = new Students(25, "Sabana" ,"Kolkata");
+        sabana.introduce(); 
+        
+        Students.institution="GroTech Minds 2"; 
+        harshit.introduce();
+        sabana.introduce();
 	}
 }
 
@@ -18,14 +22,12 @@ class Students {
 	int age;
 	String name;
 	String address;
-	String institution;
+	static String institution;
 	
-	Students(int age, String nameFromC, String addressFromC, String institutionFromC){
+	Students(int age, String nameFromC, String addressFromC){
 		this.age = age;
 		this.name = nameFromC;
-		this.address = addressFromC;	
-		this.institution = institutionFromC;
-		this.introduce();
+		this.address = addressFromC;
 	}
 
 	public boolean introduce() {
