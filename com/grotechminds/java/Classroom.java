@@ -25,12 +25,11 @@ public class Classroom {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Classroom nineGrade = new Classroom(45,9,"Mr. Amit");
-		//System.out.println(numberOfTotalClassrooms++);
+		System.out.println(numberOfTotalClassrooms++);
 		
 		Classroom tenthGrade = new Classroom(55,10,"Mr. Sandep");
 		nineGrade.createobjects();
-		//tenthGrade.createobjects();
-		
+		tenthGrade.createobjects();
 		System.out.print("Total number of classes:"+numberOfTotalClassrooms);
 	}
 
