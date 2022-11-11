@@ -9,7 +9,7 @@ public class LoopsProblems {
 		//Forward Direction Iteration. 
 		// List all the numbers from 20 to 80, with a difference of 5.
 		for(int i=20; i<=80; i=i+5) {
-			//System.out.print(i+"\t");
+			System.out.print(i+"\t");
 			//What to do ? - Increment - by 5 
 		}
 		
@@ -22,7 +22,7 @@ public class LoopsProblems {
 			if(i==85) {
 				break;
 			}
-			//System.out.print(i+"\t");
+			System.out.print(i+"\t");
 		}
 		
 		
