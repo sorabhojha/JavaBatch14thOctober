@@ -3,7 +3,7 @@ package com.grotechminds.java;
 public class JavaThreadMain {
 	
 	public static void runThreadClass() throws InterruptedException {
-		JavaThreadExample th = new JavaThreadExample();
+		JavaThreadExample th = new JavaThreadExample(1);
 		th.setName("My First Thread");
 		th.setPriority(7);
 		th.start();
