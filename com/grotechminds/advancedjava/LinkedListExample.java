@@ -1,16 +1,19 @@
 package com.grotechminds.advancedjava;
 
-class Node  {
-	int data;
-	Node next;
-	
-	Node(int data){
-		this.data = data;
-		next = null;
-	}
-}
+
 
 public class LinkedListExample {
+	
+	public class Node  {
+		int data;
+		Node next;
+		
+		Node(int data){
+			this.data = data;
+			next = null;
+		}
+	}
+	
 	//Address to the head element - Node
 	Node head;
 	
