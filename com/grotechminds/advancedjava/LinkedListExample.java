@@ -1,9 +1,9 @@
 package com.grotechminds.advancedjava;
 
-
-
 public class LinkedListExample {
 	
+	//Address to the head element - Node
+	static Node head;
 	public class Node  {
 		int data;
 		Node next;
@@ -14,9 +14,6 @@ public class LinkedListExample {
 		}
 	}
 	
-	//Address to the head element - Node
-	Node head;
-	
 	public void printNodes() {
 		Node n = head;
 		while (n!=null) {
@@ -25,15 +22,6 @@ public class LinkedListExample {
 		}	
 	}
 	
-	public static void main(String[] args) {
-		LinkedListExample llEx = new LinkedListExample();
-		llEx.head = new Node(1);
-		Node second = new Node(2);
-		Node third = new Node(3);
-		
-		llEx.head.next = second;
-		second.next = third;
-		
-		llEx.printNodes();
+	public static void main(String[] args) {	
 	}
 }

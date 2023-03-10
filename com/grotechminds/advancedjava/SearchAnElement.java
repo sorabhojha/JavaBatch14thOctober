@@ -30,6 +30,28 @@ public class SearchAnElement {
 		return false;
 	}
 	
+	public void findMiddlePoint() {
+		//Approach 1 
+		//Traverse all the elements and find the total length
+		//Find the middle element - Total length / 2
+		//Traverse from head to the middle element
+		
+		//Approach 2
+		//Head - Starting point
+		//Take 2 pointers. One pointer will jump one position, whereas other pointer will jump 2 positions. 
+		Node slowPointer = head;
+		Node fastPointer = head;
+		
+		while(fastPointer!=null && fastPointer.next!=null) {
+			fastPointer = fastPointer.next.next;
+			slowPointer = slowPointer.next;
+		}
+		System.out.print("Middle element is: "+slowPointer.data);
+	}
+	
+	//Implement stack using doubly linked list. insert(), fetch()
+	
+	
 	//1-2-3-4-5-6-7-8-9-10
 	//7
 	public static void main(String[] args) {
